@@ -20,13 +20,55 @@
              Firefox 3.6 focus border issues.  Initially, don't display flashContent div so it won't show 
              if JavaScript disabled.
         -->
+		
+		
         <style type="text/css" media="screen"> 
             html, body  { height:100%; }
-            body { margin:0; padding:0; overflow:auto; text-align:center; 
-                   background-color: ${bgcolor}; }   
+            body 
+			{				
+				width: 720px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5%;
+				height: 420px;
+				overflow:auto; 
+			}  
+			
             object:focus { outline:none; }
             #flashContent { display:none; }
         </style>
+		
+		<!--<style type="text/css" media="screen">
+		
+		
+		width: 720px;
+				margin-left: auto;
+				margin-right: auto;
+				height: 420px;
+				margin-top: 100px;
+		
+		
+		html, body  { height:100%; }
+		  background-color: ${bgcolor}; 		
+		#content {
+		   width: 960px;
+		   margin-left: 30px;
+		   margin-right: auto;
+		   height: 600px;
+		}
+		
+		#container 
+		{
+			position: absolute;
+   			top: 50%;
+   			margin-top: -300px;/* half of #content height*/
+   			left: 0;
+   			width: 100%;
+			text-align: left;
+		}
+		
+		#flashContent { display:none; }		
+		</style> -->
         
         <!-- Enable Browser History by replacing useBrowserHistory tokens with two hyphens -->
         <!-- BEGIN Browser History required section ${useBrowserHistory}>

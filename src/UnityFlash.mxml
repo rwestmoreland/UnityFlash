@@ -3,7 +3,8 @@
 			   xmlns:s="library://ns.adobe.com/flex/spark" 
 			   xmlns:mx="library://ns.adobe.com/flex/mx" 
 			   minWidth="720" minHeight="400" maxWidth="720" maxHeight="400"
-			   backgroundAlpha="0" frameRate="60" creationComplete="_init(event);">
+			   backgroundAlpha="0" frameRate="60" 
+			   creationComplete="_init(event);">
 	
 	<fx:Style source="UnityFlashResearch.css"/>
 	
@@ -87,7 +88,7 @@
 				
 				invis_btn.buttonMode = true;
 				
-				TweenLite.delayedCall(5, _killLoadScreen);
+				TweenLite.delayedCall(4, _killLoadScreen);
 			}
 			
 			private function _killLoadScreen() : void
