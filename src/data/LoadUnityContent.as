@@ -6,7 +6,6 @@ package data
 	
 	import flash.display.Sprite;
 	import flash.events.Event;
-	import flash.filesystem.File;
 	
 	import mx.core.UIComponent;
 	
@@ -33,8 +32,7 @@ package data
 		public function startLoad($url:String) : void
 		{
 			var params : UnityLoaderParams = new UnityLoaderParams(false, 720, 400, false);
-			var file : File = File.applicationDirectory.resolvePath($url);
-			_unityContentLoader = new UnityContentLoader(file.url, this, params, true);
+			_unityContentLoader = new UnityContentLoader($url, this, params, true);
 			_unityContentLoader.contentLoaderInfo.addEventListener(Event.COMPLETE, _onUnityContentLoaderComplete);
 			_unityContentLoader.loadUnity();
 		}
