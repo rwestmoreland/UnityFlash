@@ -57,7 +57,7 @@
 				setElementIndex(loading, 4);
 				
 				label1.text = "Initialized engine version: 4.0.0f7";
-				label2.text = "MolehillGfxDevice: OpenGL (Direct blitting)";
+				label2.text = "MolehillGfxDevice: OpenGL";
 				dblClkHint1.text = "Double click on any phone to interact with it.";
 				dblClkHint2.text = "Double click on phone to open, or close it.";
 			}
