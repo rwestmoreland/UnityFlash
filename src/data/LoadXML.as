@@ -2,19 +2,14 @@ package data
 {
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
-	import flash.events.IEventDispatcher;
 	import flash.events.IOErrorEvent;
-	import flash.filesystem.File;
 	import flash.net.URLLoader;
 	import flash.net.URLRequest;
-	
-	import mx.rpc.events.ResultEvent;
-	import mx.rpc.http.HTTPService;
 	
 	public class LoadXML extends EventDispatcher
 	{
 		public static const XML_LOADED		: String = "XML.Loaded";
-		private static const XML_URL		: String = "./xml/";
+		private static const URL		: String = "./xml/";
 		
 		private var _xml					: XML;
 		
@@ -26,9 +21,7 @@ package data
 		public function init($xml:String) : void
 		{
 			var _loader : URLLoader = new URLLoader();	
-			var XMLFile : File = File.applicationDirectory.resolvePath(XML_URL + $xml);
-			
-			_loader.load(new URLRequest(XMLFile.url));
+			_loader.load(new URLRequest(URL + $xml));
 			_loader.addEventListener(Event.COMPLETE, _processXML);
 			_loader.addEventListener(IOErrorEvent.IO_ERROR, _onIOError);
 		}
