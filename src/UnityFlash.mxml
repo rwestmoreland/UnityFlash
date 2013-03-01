@@ -3,7 +3,7 @@
 			   xmlns:s="library://ns.adobe.com/flex/spark"
 			   xmlns:mx="library://ns.adobe.com/flex/mx"
 			   minWidth="720" minHeight="400" maxWidth="720" maxHeight="400" backgroundAlpha="0"
-			   creationComplete="_init(event);" frameRate="60" viewSourceURL="srcview/index.html">
+			   creationComplete="_init(event);" frameRate="60">
 	
 	<fx:Style source="UnityFlashResearch.css"/>
 	
